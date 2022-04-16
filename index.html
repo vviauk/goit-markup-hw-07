@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 
-<head>
+<head>    
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -15,6 +15,7 @@
 
   <!-- Styles -->
   <link rel="stylesheet" href="./css/styles.css" />
+  <link rel="stylesheet" href="./css/main.min.css">
   <title>Module 6 - WebStudio</title>
 </head>
 
@@ -61,15 +62,13 @@
     <!-- Герой -->
     <section class="hero">
       <div class="container">
-        <h1 class="hero-title">
+        <h1 class="hero__title">
           Эффективные решения <br />
           для вашего бизнеса
         </h1>
         <div class="container">
-          <button class="hero-order-button" type="button" data-modal-open>Заказать услугу</button>
+          <button class="hero__button" type="button" data-modal-open>Заказать услугу</button>
         </div>
-
-        
       </div>
     </section>
 
@@ -126,32 +125,33 @@
       </div>
     </section>
 
-    <!-- Что делаем -->
+     <!-- Что делаем -->
     <section class="jobs">
       <div class="container">
-        <h2 class="we-do">Чем мы занимаемся</h2>
-        <ul class="jobs-main-list">
-          <li class="jobs-list">
-            <div class="jobs-wrapper">
+        <h2 class="jobs__works">Чем мы занимаемся</h2>
+        <ul class="jobs__main">
+          <li class="jobs__list">
+            <div class="jobs__wrapper">
               <img src="./images/print.jpg" alt="Печать" width="370" height="294" />
-              <p class="jobs-description">десктопные приложения</p>
+              <p class="jobs__description">десктопные приложения</p>
             </div>
           </li>
-          <li class="jobs-list">
-            <div class="jobs-wrapper">
+          <li class="jobs__list">
+            <div class="jobs__wrapper">
               <img src="./images/phone.jpg" alt="Телефон" width="370" height="294" />
-              <p class="jobs-description">Мобильные приложения</p>
+              <p class="jobs__description">Мобильные приложения</p>
             </div>
           </li>
-          <li class="jobs-list">
-            <div class="jobs-wrapper">
+          <li class="jobs__list">
+            <div class="jobs__wrapper">
               <img src="./images/tablet.jpg" alt="Планшет" width="370" height="294" />
-              <p class="jobs-description">Дизайнерские решения</p>
+              <p class="jobs__description">Дизайнерские решения</p>
             </div>
           </li>
         </ul>
       </div>
     </section>
+
 
     <!-- Команда -->
     <section class="team">
@@ -309,50 +309,49 @@
         </ul>
       </div>
     </section>
-
-    <!-- Клиенты -->
+<!-- Клиенты -->
     <section class="clients">
       <div class="container">
-        <h2 class="clients-title">Постоянные клиенты</h1>
-          <ul class="clients-list">
-            <li class="clients-logo">
-              <a class="clients-logo-icon" href>
-                <svg class="clients-logo-icons" width="106" height="60">
+        <h2 class="clients__title">Постоянные клиенты</h1>
+          <ul class="clients__list">
+            <li class="clients__logo">
+              <a class="clients__icon" href>
+                <svg class="clients__icons" width="106" height="60">
                   <use href="images/icons.svg#icon-Logo1"></use>
                 </svg>
               </a>
             </li>
-            <li class="clients-logo">
-              <a class="clients-logo-icon" href>
-                <svg class="clients-logo-icons" width="106" height="60">
+            <li class="clients__logo">
+              <a class="clients__icon" href>
+                <svg class="clients__icons" width="106" height="60">
                   <use href="images/icons.svg#icon-Logo2"></use>
                 </svg>
               </a>
             </li>
-            <li class="clients-logo">
-              <a class="clients-logo-icon" href>
-                <svg class="clients-logo-icons" width="106" height="60">
+            <li class="clients__logo">
+              <a class="clients__icon" href>
+                <svg class="clients__icons" width="106" height="60">
                   <use href="images/icons.svg#icon-Logo3"></use>
                 </svg>
               </a>
             </li>
-            <li class="clients-logo">
-              <a class="clients-logo-icon" href>
-                <svg class="clients-logo-icons" width="106" height="60">
+            <li class="clients__logo">
+              <a class="clients__icon" href>
+                <svg class="clients__icons" width="106" height="60">
                   <use href="images/icons.svg#icon-Logo4"></use>
                 </svg>
               </a>
             </li>
-            <li class="clients-logo">
-              <a class="clients-logo-icon" href>
-                <svg class="clients-logo-icons" width="106" height="60">
+            <li class="clients__logo">
+              <a class="clients__icon" href>
+                <svg class="clients__icons" width="106" height="60">
                   <use href="images/icons.svg#icon-Logo5"></use>
                 </svg>
               </a>
             </li>
-            <li class="clients-logo">
-              <a class="clients-logo-icon" href>
-                <svg class="clients-logo-icons" width="106" height="60">
+            <li class="clients__logo">
+              <a class="clients__icon" href>
+                <svg class="clients__icons" width="106" height="60">
                   <use href="images/icons.svg#icon-Logo6"></use>
                 </svg>
               </a>
@@ -427,61 +426,59 @@
   <!-- backdrop -->
   <section class="back-drop">
     <div class="container">
-    <div class="backdrop is-hidden" data-modal>
-      <div class="modal">
-         <form class="form" name="" id="">
-          <div class="form-field">
-            <p class="modal-title"> <b>Оставьте свои данные, мы вам перезвоним</b> </p>
-          </div>
-          <div class="form-field">
-            <label class="form-label" for="name">Имя
-                              <input class="frame" type="text" name="username" id="name"/>
-              <svg class="form-icons" width="20" height="20">
-                <use href="images/icons.svg#icon-person"></use>
-              </svg>
-            </label>
-          </div>
-          <div class="form-field">
-            <label class="form-label" for="tel">Телефон
-              <input class="frame" type="tel" name="tel" id="tel"/>
-              <svg class="form-icons" width="20" height="20">
-                <use href="images/icons.svg#icon-phone-new"></use>
-              </svg>
-            </label>
-          </div>
-          <div class="form-field">
-            <label class="form-label" for="email">Почта
-              <input class="frame" type="email" name="email" id="email"/>
-              <svg class="form-icons" width="20" height="20">
-                <use href="images/icons.svg#icon-email"></use>
-              </svg>
-            </label>
-          </div>
-          <div class="form-field">
-            <label class="form-label" for="coments">Комментарий<textarea class="feedback"
-              name="feedback"
-              id="coments"
-              rows="5"
-              placeholder="Введите текст"></textarea>
-            </label>
-          </div>
-          <div class="form-field">
-            <label class="checkbox-field">
-              <input class="checkbox" type="checkbox" name="checkbox" value="checkbox"/>
-              <span class="checkbox-icon"></span>
-              <span class="checkbox-label">Соглашаюсь с рассылкой и принимаю <a class="checkbox-link" href="">Условия договора</a></span>
-            </label>
-          </div>
-          <button class="submit-button" type="submit">Отправить</button>
-        </form>
+      <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+          <form class="form" name="" id="">
+            <div class="form-field">
+              <p class="modal-title"> <b>Оставьте свои данные, мы вам перезвоним</b> </p>
+            </div>
+            <div class="form-field">
+              <label class="form-label" for="name">Имя
+                <input class="frame" type="text" name="username" id="name" />
+                <svg class="form-icons" width="20" height="20">
+                  <use href="images/icons.svg#icon-person"></use>
+                </svg>
+              </label>
+            </div>
+            <div class="form-field">
+              <label class="form-label" for="tel">Телефон
+                <input class="frame" type="tel" name="tel" id="tel" />
+                <svg class="form-icons" width="20" height="20">
+                  <use href="images/icons.svg#icon-phone-new"></use>
+                </svg>
+              </label>
+            </div>
+            <div class="form-field">
+              <label class="form-label" for="email">Почта
+                <input class="frame" type="email" name="email" id="email" />
+                <svg class="form-icons" width="20" height="20">
+                  <use href="images/icons.svg#icon-email"></use>
+                </svg>
+              </label>
+            </div>
+            <div class="form-field">
+              <label class="form-label" for="coments">Комментарий<textarea class="feedback" name="feedback" id="coments"
+                  rows="5" placeholder="Введите текст"></textarea>
+              </label>
+            </div>
+            <div class="form-field">
+              <label class="checkbox-field">
+                <input class="checkbox" type="checkbox" name="checkbox" value="checkbox" />
+                <span class="checkbox-icon"></span>
+                <span class="checkbox-label">Соглашаюсь с рассылкой и принимаю <a class="checkbox-link" href="">Условия
+                    договора</a></span>
+              </label>
+            </div>
+            <button class="submit-button" type="submit">Отправить</button>
+          </form>
           <button class="modal-button" data-modal-close><svg width="30" height="30">
-          <use href="images/icons.svg#icon-close"></use>
-          </svg></button>
+              <use href="images/icons.svg#icon-close"></use>
+            </svg></button>
+        </div>
       </div>
     </div>
-  </div>
   </section>
-    
+
 
   <script src="./js/modal.js"></script>
 </body>
